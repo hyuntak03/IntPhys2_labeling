@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IntPhys2 위반 라벨링</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top">
+  <button class="ghost only-narrow" id="btnList" aria-label="영상 목록">목록</button>
+  <div class="brand">IntPhys 2 <span>· 위반 시점 라벨링</span></div>
+  <label class="who">작업자 <select id="who"></select></label>
+  <div class="progress" id="progress"><div class="bar"><i></i></div><span></span></div>
+  <div class="spacer"></div>
+  <span class="save-state" id="saveState"></span>
+  <button class="ghost" id="btnImport">불러오기</button>
+  <input type="file" id="fileImport" accept=".csv,text/csv" hidden>
+  <button class="primary" id="btnExport">CSV 내보내기</button>
+  <button class="ghost" id="btnGuide" aria-label="규칙과 단축키">규칙 · 단축키</button>
+</header>
+
+<main class="layout" id="layout">
+  <aside class="list" id="listPane">
+    <div class="filters">
+      <div class="seg" id="filterSeg">
+        <button data-f="all" class="on">전체</button>
+        <button data-f="todo">남음</button>
+        <button data-f="done">완료</button>
+        <button data-f="nf">못 찾음</button>
+      </div>
+      <select id="condFilter" aria-label="condition 필터"></select>
+    </div>
+    <ol class="items" id="items"></ol>
+  </aside>
+
+  <section class="stage">
+    <div class="player" id="player">
+      <video id="video" muted playsinline preload="auto"></video>
+      <div class="hud">
+        <div class="fnum"><span class="f">F</span><b id="frameNow">0</b><span class="of">/ <span id="frameMax">0</span></span></div>
+        <div class="tsub" id="frameSub"></div>
+      </div>
+      <div class="warn" id="warn" hidden></div>
+    </div>
+
+    <div class="timeline" id="timeline" aria-label="타임라인">
+      <div class="track">
+        <div class="ticks" id="ticks"></div>
+        <div class="range" id="tlRange"></div>
+        <div class="mark start" id="tlStart"><span>S</span></div>
+        <div class="mark end" id="tlEnd"><span>E</span></div>
+        <div class="head" id="tlHead"></div>
+        <div class="hover" id="tlHover" hidden></div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <div class="group">
+        <button id="bBack10" title="10 프레임 뒤로 (Shift+←)">−10</button>
+        <button id="bBack1" title="1 프레임 뒤로 (←)">−1</button>
+        <button id="bPlay" class="play" title="재생 / 정지 (Space)">재생</button>
+        <button id="bFwd1" title="1 프레임 앞으로 (→)">+1</button>
+        <button id="bFwd10" title="10 프레임 앞으로 (Shift+→)">+10</button>
+      </div>
+      <label class="speed">속도
+        <select id="speed">
+          <option value="0.1">0.1×</option>
+          <option value="0.25">0.25×</option>
+          <option value="0.5">0.5×</option>
+          <option value="1">1×</option>
+        </select>
+      </label>
+      <button id="bRange" class="ghost" title="표시한 구간 앞뒤를 재생 (R)">구간 재생</button>
+    </div>
+
+    <div class="strip-wrap">
+      <div class="strip-label">주변 프레임 <span>경계 확인: 바로 앞 칸은 아직 가능, 표시한 칸부터 불가능</span></div>
+      <div class="strip" id="strip"></div>
+    </div>
+  </section>
+
+  <aside class="panel">
+    <div class="meta" id="meta"></div>
+    <p class="hint" id="hint"></p>
+
+    <form class="form" id="form" autocomplete="off" onsubmit="return false">
+      <div class="field start">
+        <label for="inStart">위반 시작 프레임</label>
+        <div class="row">
+          <input type="number" id="inStart" min="0" step="1" inputmode="numeric" placeholder="—">
+          <button type="button" id="bSetStart" title="현재 프레임을 시작으로 (S)">현재 프레임 <kbd>S</kbd></button>
+          <button type="button" id="bGoStart" class="ghost icon" title="시작 프레임으로 이동 ([)">이동</button>
+        </div>
+      </div>
+      <div class="field end">
+        <label for="inEnd">위반 끝 프레임</label>
+        <div class="row">
+          <input type="number" id="inEnd" min="0" step="1" inputmode="numeric" placeholder="—">
+          <button type="button" id="bSetEnd" title="현재 프레임을 끝으로 (E)">현재 프레임 <kbd>E</kbd></button>
+          <button type="button" id="bGoEnd" class="ghost icon" title="끝 프레임으로 이동 (])">이동</button>
+        </div>
+      </div>
+      <button type="button" id="bInstant" class="ghost wide" title="순간적인 사건: 끝 = 시작 (I)">순간 사건 · 끝 = 시작 <kbd>I</kbd></button>
+
+      <label class="check"><input type="checkbox" id="chkOcc"><span>가림 뒤에서 일어남<small>시작 = 드러나는 프레임</small></span><kbd>O</kbd></label>
+      <label class="check"><input type="checkbox" id="chkNf"><span>위반을 못 찾음<small>메모에 이유를 적어 주세요</small></span></label>
+
+      <label class="note-label" for="note">메모</label>
+      <textarea id="note" rows="3" placeholder="애매한 점, 못 찾은 이유 등"></textarea>
+
+      <div class="form-msg" id="formMsg"></div>
+      <div class="score" id="score"></div>
+
+      <div class="nav">
+        <button type="button" id="bPrev" class="ghost" title="이전 영상 (P)">이전</button>
+        <button type="button" id="bNext" class="primary" title="다음 영상 (Enter)">다음 영상 <kbd>Enter</kbd></button>
+      </div>
+    </form>
+  </aside>
+</main>
+
+<div class="picker" id="picker" hidden>
+  <div class="picker-card">
+    <h1>작업자를 고르세요</h1>
+    <p id="pickerNote">장면 단위 (pair1 · pair2 함께) 로 condition 마다 고르게 4 명에게 나눴습니다. 라벨은 이 브라우저에만 자동 저장되니, 같은 브라우저에서 이어서 작업하세요.</p>
+    <div class="picker-grid" id="pickerGrid"></div>
+  </div>
+</div>
+
+<dialog class="guide" id="guide">
+  <div class="guide-head">
+    <h2>표시 규칙</h2>
+    <button class="ghost" id="bGuideClose" aria-label="닫기">닫기</button>
+  </div>
+  <ol class="rules">
+    <li>프레임 번호는 <b>원본 60 fps 기준, 0 부터</b> (영상 시작 = 0). 화면 왼쪽 위 <b>F</b> 숫자가 그 번호입니다.</li>
+    <li><b>시작</b> = 위반이 <b>처음 보이는</b> 프레임. 사라지기 시작 · 바뀌기 시작 · 통과하기 시작 · 순간이동한 첫 프레임. 바로 앞 프레임까지는 아직 가능한 장면이어야 합니다.</li>
+    <li><b>끝</b> = 위반이 끝나는 프레임. 순간적인 사건이면 시작과 같게 (<kbd>I</kbd>).</li>
+    <li>위반이 <b>가림막 뒤</b>에서 일어나 드러나는 순간이 따로 있으면, 시작은 <b>드러나는 프레임</b>으로 하고 “가림 뒤” 를 체크합니다.</li>
+    <li>위반을 못 찾겠으면 비워 두고 “못 찾음” 체크 + 메모에 이유.</li>
+  </ol>
+  <h3>condition 별로 보는 것</h3>
+  <dl class="conds" id="condList"></dl>
+  <h3>작업 순서</h3>
+  <ol class="rules">
+    <li>1× 로 한 번 끝까지 보며 위반이 대략 어디인지 찾습니다.</li>
+    <li>그 근처에서 <kbd>←</kbd> <kbd>→</kbd> 로 한 프레임씩 움직이며, 아래 주변 프레임 줄에서 “가능 → 불가능” 으로 바뀌는 경계를 찾습니다.</li>
+    <li><kbd>S</kbd> 로 시작, <kbd>E</kbd> 로 끝을 찍고, <kbd>R</kbd> 로 구간을 다시 재생해 확인합니다.</li>
+    <li><kbd>Enter</kbd> 로 다음 영상. 라벨은 자동 저장됩니다.</li>
+    <li id="guideSave">작업을 마칠 때마다 <b>CSV 내보내기</b> 로 파일을 받아 담당자에게 보냅니다. 브라우저 저장소는 다른 컴퓨터 · 브라우저와 공유되지 않습니다.</li>
+  </ol>
+  <h3>단축키</h3>
+  <table class="keys">
+    <tr><td><kbd>←</kbd> <kbd>→</kbd></td><td>1 프레임</td><td><kbd>Shift</kbd>+<kbd>←</kbd> <kbd>→</kbd></td><td>10 프레임</td></tr>
+    <tr><td><kbd>Space</kbd></td><td>재생 / 정지</td><td><kbd>1</kbd>–<kbd>4</kbd></td><td>속도 0.1 · 0.25 · 0.5 · 1×</td></tr>
+    <tr><td><kbd>S</kbd> / <kbd>E</kbd></td><td>시작 / 끝 = 현재 프레임</td><td><kbd>I</kbd></td><td>끝 = 시작</td></tr>
+    <tr><td><kbd>[</kbd> / <kbd>]</kbd></td><td>시작 / 끝 으로 이동</td><td><kbd>R</kbd></td><td>구간 재생</td></tr>
+    <tr><td><kbd>O</kbd></td><td>가림 뒤 체크</td><td><kbd>Enter</kbd> / <kbd>P</kbd></td><td>다음 / 이전 영상</td></tr>
+  </table>
+</dialog>
+
+<div class="toast" id="toast" hidden></div>
+<video id="stripVideo" class="offscreen" muted playsinline preload="auto" aria-hidden="true"></video>
+
+<script src="data/manifest.js"></script>
+<script src="data/config.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+# 원본 · 미리보기 gif 는 올리지 않는다 (Pages 1 GB 제한, clips/ 가 웹용 사본)
+videos/
+gifs/
+labels_merged.csv
+*.tmp.mp4
+.DS_Store
+__pycache__/
