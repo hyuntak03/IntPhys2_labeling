@@ -113,7 +113,7 @@ button.primary kbd { color: var(--accent-ink); background: rgba(255,255,255,.35)
 /* ---------- layout ---------- */
 .layout {
   display: grid;
-  grid-template-columns: 270px minmax(0, 1fr) 330px;
+  grid-template-columns: 292px minmax(0, 1fr) 330px;
   height: calc(100vh - 52px);
 }
 
@@ -157,7 +157,7 @@ button.primary kbd { color: var(--accent-ink); background: rgba(255,255,255,.35)
 .items .group .sw { display: inline-block; width: 8px; height: 8px; border-radius: 2px; background: var(--c); margin-right: 7px; }
 
 /* IntPhys 1: 쌍마다 왼쪽 선으로 두 영상을 묶는다 */
-.item.ip1 { grid-template-columns: 34px 8px minmax(0, 1fr) auto; gap: 8px; padding-left: 9px; }
+.item.ip1 { grid-template-columns: 32px 8px minmax(0, 1fr) auto; gap: 7px; padding-left: 9px; }
 .item.ip1.pair-first { margin-top: 5px; }
 .item.ip1 .pairtag { align-self: stretch; display: flex; align-items: center; margin: -6px 0; padding-left: 7px; border-left: 2px solid var(--pc); color: var(--muted); font-size: 11.5px; white-space: nowrap; }
 .item.ip1.p1 { --pc: #56657a; }
