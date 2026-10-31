@@ -1,0 +1,181 @@
+video_id,file,block_id,variant,plausible,pair_id,block_type,quadruplet,run,group,event_kind,principle,d,n_violations,magic_ticks,magic_actor
+O1_01_2,videos/O1_01_2.mp4,0,pos_2,1,1,O1,01,2,moving/occluded,gap_contains_d,O1,46,0,,
+O1_01_1,videos/O1_01_1.mp4,0,imp_1,0,1,O1,01,1,moving/occluded,gap_contains_d,O1,46,1,47,object_1
+O1_01_4,videos/O1_01_4.mp4,0,pos_4,1,2,O1,01,4,moving/occluded,not_seen_before_d,O1,46,0,,
+O1_01_3,videos/O1_01_3.mp4,0,imp_3,0,2,O1,01,3,moving/occluded,not_seen_before_d,O1,46,1,47,object_1
+O1_03_3,videos/O1_03_3.mp4,2,pos_3,1,2,O1,03,3,static/occluded,gap_contains_d,O1,21,0,,
+O1_03_2,videos/O1_03_2.mp4,2,imp_2,0,2,O1,03,2,static/occluded,gap_contains_d,O1,21,1,22,object_1
+O1_03_1,videos/O1_03_1.mp4,2,pos_1,1,1,O1,03,1,static/occluded,not_seen_before_d,O1,21,0,,
+O1_03_4,videos/O1_03_4.mp4,2,imp_4,0,1,O1,03,4,static/occluded,not_seen_before_d,O1,21,1,22,object_1
+O1_04_4,videos/O1_04_4.mp4,3,pos_4,1,2,O1,04,4,moving/occluded,not_seen_before_d,O1,48,0,,
+O1_04_2,videos/O1_04_2.mp4,3,imp_2,0,2,O1,04,2,moving/occluded,not_seen_before_d,O1,48,1,49,object_2
+O1_04_1,videos/O1_04_1.mp4,3,pos_1,1,1,O1,04,1,moving/occluded,gap_ends_just_before_d,O1,48,0,,
+O1_04_3,videos/O1_04_3.mp4,3,imp_3,0,1,O1,04,3,moving/occluded,gap_ends_just_before_d,O1,48,1,49,object_2
+O1_05_4,videos/O1_05_4.mp4,4,pos_4,1,1,O1,05,4,moving/occluded,gap_contains_d,O1,58,0,,
+O1_05_1,videos/O1_05_1.mp4,4,imp_1,0,1,O1,05,1,moving/occluded,gap_contains_d,O1,58,1,59,object_1
+O1_05_3,videos/O1_05_3.mp4,4,pos_3,1,2,O1,05,3,moving/occluded,not_seen_before_d,O1,58,0,,
+O1_05_2,videos/O1_05_2.mp4,4,imp_2,0,2,O1,05,2,moving/occluded,not_seen_before_d,O1,58,1,59,object_1
+O1_06_3,videos/O1_06_3.mp4,5,pos_3,1,1,O1,06,3,moving/occluded,not_seen_before_d,O1,43,0,,
+O1_06_1,videos/O1_06_1.mp4,5,imp_1,0,1,O1,06,1,moving/occluded,not_seen_before_d,O1,43,2,44 51,object_1
+O1_06_2,videos/O1_06_2.mp4,5,pos_2,1,2,O1,06,2,moving/occluded,gap_contains_d,O1,43,0,,
+O1_06_4,videos/O1_06_4.mp4,5,imp_4,0,2,O1,06,4,moving/occluded,gap_contains_d,O1,43,2,44 51,object_1
+O1_08_1,videos/O1_08_1.mp4,7,pos_1,1,1,O1,08,1,static/occluded,not_seen_before_d,O1,50,0,,
+O1_08_2,videos/O1_08_2.mp4,7,imp_2,0,1,O1,08,2,static/occluded,not_seen_before_d,O1,50,1,51,object_1
+O1_08_3,videos/O1_08_3.mp4,7,pos_3,1,2,O1,08,3,static/occluded,gap_contains_d,O1,50,0,,
+O1_08_4,videos/O1_08_4.mp4,7,imp_4,0,2,O1,08,4,static/occluded,gap_contains_d,O1,50,1,51,object_1
+O1_09_3,videos/O1_09_3.mp4,8,pos_3,1,1,O1,09,3,moving/occluded,not_seen_before_d,O1,55,0,,
+O1_09_1,videos/O1_09_1.mp4,8,imp_1,0,1,O1,09,1,moving/occluded,not_seen_before_d,O1,55,1,56,object_1
+O1_09_2,videos/O1_09_2.mp4,8,pos_2,1,2,O1,09,2,moving/occluded,gap_contains_d,O1,55,0,,
+O1_09_4,videos/O1_09_4.mp4,8,imp_4,0,2,O1,09,4,moving/occluded,gap_contains_d,O1,55,1,56,object_1
+O1_14_1,videos/O1_14_1.mp4,13,pos_1,1,1,O1,14,1,static/occluded,not_seen_before_d,O1,22,0,,
+O1_14_2,videos/O1_14_2.mp4,13,imp_2,0,1,O1,14,2,static/occluded,not_seen_before_d,O1,22,1,23,object_1
+O1_14_4,videos/O1_14_4.mp4,13,pos_4,1,2,O1,14,4,static/occluded,gap_contains_d,O1,22,0,,
+O1_14_3,videos/O1_14_3.mp4,13,imp_3,0,2,O1,14,3,static/occluded,gap_contains_d,O1,22,1,23,object_1
+O1_18_2,videos/O1_18_2.mp4,17,pos_2,1,1,O1,18,2,static/occluded,gap_contains_d,O1,51,0,,
+O1_18_1,videos/O1_18_1.mp4,17,imp_1,0,1,O1,18,1,static/occluded,gap_contains_d,O1,51,1,52,object_1
+O1_18_4,videos/O1_18_4.mp4,17,pos_4,1,2,O1,18,4,static/occluded,not_seen_before_d,O1,51,0,,
+O1_18_3,videos/O1_18_3.mp4,17,imp_3,0,2,O1,18,3,static/occluded,not_seen_before_d,O1,51,1,52,object_1
+O1_22_2,videos/O1_22_2.mp4,21,pos_2,1,1,O1,22,2,static/occluded,not_seen_before_d,O1,30,0,,
+O1_22_1,videos/O1_22_1.mp4,21,imp_1,0,1,O1,22,1,static/occluded,not_seen_before_d,O1,30,1,31,object_1
+O1_22_4,videos/O1_22_4.mp4,21,pos_4,1,2,O1,22,4,static/occluded,gap_contains_d,O1,30,0,,
+O1_22_3,videos/O1_22_3.mp4,21,imp_3,0,2,O1,22,3,static/occluded,gap_contains_d,O1,30,1,31,object_1
+O1_23_3,videos/O1_23_3.mp4,22,pos_3,1,1,O1,23,3,moving/occluded,gap_contains_d,O1,60,0,,
+O1_23_1,videos/O1_23_1.mp4,22,imp_1,0,1,O1,23,1,moving/occluded,gap_contains_d,O1,60,2,61 70,object_3
+O1_23_2,videos/O1_23_2.mp4,22,pos_2,1,2,O1,23,2,moving/occluded,not_seen_before_d,O1,60,0,,
+O1_23_4,videos/O1_23_4.mp4,22,imp_4,0,2,O1,23,4,moving/occluded,not_seen_before_d,O1,60,2,61 70,object_3
+O1_24_3,videos/O1_24_3.mp4,23,pos_3,1,2,O1,24,3,moving/occluded,not_seen_before_d,O1,44,0,,
+O1_24_2,videos/O1_24_2.mp4,23,imp_2,0,2,O1,24,2,moving/occluded,not_seen_before_d,O1,44,2,45 51,object_1
+O1_24_1,videos/O1_24_1.mp4,23,pos_1,1,1,O1,24,1,moving/occluded,gap_ends_just_before_d,O1,44,0,,
+O1_24_4,videos/O1_24_4.mp4,23,imp_4,0,1,O1,24,4,moving/occluded,gap_ends_just_before_d,O1,44,2,45 51,object_1
+O1_26_2,videos/O1_26_2.mp4,25,pos_2,1,1,O1,26,2,moving/occluded,gap_contains_d,O1,43,0,,
+O1_26_1,videos/O1_26_1.mp4,25,imp_1,0,1,O1,26,1,moving/occluded,gap_contains_d,O1,43,2,44 51,object_1
+O1_26_4,videos/O1_26_4.mp4,25,pos_4,1,2,O1,26,4,moving/occluded,not_seen_before_d,O1,43,0,,
+O1_26_3,videos/O1_26_3.mp4,25,imp_3,0,2,O1,26,3,moving/occluded,not_seen_before_d,O1,43,2,44 51,object_1
+O1_27_2,videos/O1_27_2.mp4,26,pos_2,1,1,O1,27,2,moving/occluded,gap_contains_d,O1,65,0,,
+O1_27_1,videos/O1_27_1.mp4,26,imp_1,0,1,O1,27,1,moving/occluded,gap_contains_d,O1,65,2,66 81,object_3
+O1_27_3,videos/O1_27_3.mp4,26,pos_3,1,2,O1,27,3,moving/occluded,not_seen_before_d,O1,65,0,,
+O1_27_4,videos/O1_27_4.mp4,26,imp_4,0,2,O1,27,4,moving/occluded,not_seen_before_d,O1,65,2,66 81,object_3
+O1_29_4,videos/O1_29_4.mp4,28,pos_4,1,1,O1,29,4,moving/occluded,not_seen_before_d,O1,48,0,,
+O1_29_1,videos/O1_29_1.mp4,28,imp_1,0,1,O1,29,1,moving/occluded,not_seen_before_d,O1,48,1,49,object_1
+O1_29_3,videos/O1_29_3.mp4,28,pos_3,1,2,O1,29,3,moving/occluded,gap_ends_just_before_d,O1,48,0,,
+O1_29_2,videos/O1_29_2.mp4,28,imp_2,0,2,O1,29,2,moving/occluded,gap_ends_just_before_d,O1,48,1,49,object_1
+O2_01_1,videos/O2_01_1.mp4,30,pos_1,1,1,O2,01,1,moving/occluded,gap_contains_d,O2,51,0,,
+O2_01_3,videos/O2_01_3.mp4,30,imp_3,0,1,O2,01,3,moving/occluded,gap_contains_d,O2,51,1,52,object_1
+O2_01_2,videos/O2_01_2.mp4,30,pos_2,1,2,O2,01,2,moving/occluded,gap_contains_d,O2,51,0,,
+O2_01_4,videos/O2_01_4.mp4,30,imp_4,0,2,O2,01,4,moving/occluded,gap_contains_d,O2,51,1,52,object_1
+O2_03_4,videos/O2_03_4.mp4,32,pos_4,1,2,O2,03,4,moving/occluded,gap_contains_d,O2,51,0,,
+O2_03_2,videos/O2_03_2.mp4,32,imp_2,0,2,O2,03,2,moving/occluded,gap_contains_d,O2,51,2,52 60,object_1
+O2_03_1,videos/O2_03_1.mp4,32,pos_1,1,1,O2,03,1,moving/occluded,gap_contains_d,O2,51,0,,
+O2_03_3,videos/O2_03_3.mp4,32,imp_3,0,1,O2,03,3,moving/occluded,gap_contains_d,O2,51,2,52 60,object_1
+O2_04_4,videos/O2_04_4.mp4,33,pos_4,1,2,O2,04,4,moving/occluded,gap_contains_d,O2,49,0,,
+O2_04_2,videos/O2_04_2.mp4,33,imp_2,0,2,O2,04,2,moving/occluded,gap_contains_d,O2,49,2,50 60,object_1
+O2_04_1,videos/O2_04_1.mp4,33,pos_1,1,1,O2,04,1,moving/occluded,gap_contains_d,O2,49,0,,
+O2_04_3,videos/O2_04_3.mp4,33,imp_3,0,1,O2,04,3,moving/occluded,gap_contains_d,O2,49,2,50 60,object_1
+O2_05_3,videos/O2_05_3.mp4,34,pos_3,1,1,O2,05,3,static/occluded,gap_contains_d,O2,33,0,,
+O2_05_1,videos/O2_05_1.mp4,34,imp_1,0,1,O2,05,1,static/occluded,gap_contains_d,O2,33,1,34,object_1
+O2_05_2,videos/O2_05_2.mp4,34,pos_2,1,2,O2,05,2,static/occluded,gap_contains_d,O2,33,0,,
+O2_05_4,videos/O2_05_4.mp4,34,imp_4,0,2,O2,05,4,static/occluded,gap_contains_d,O2,33,1,34,object_1
+O2_07_2,videos/O2_07_2.mp4,36,pos_2,1,1,O2,07,2,static/occluded,gap_contains_d,O2,79,0,,
+O2_07_1,videos/O2_07_1.mp4,36,imp_1,0,1,O2,07,1,static/occluded,gap_contains_d,O2,79,1,80,object_3
+O2_07_3,videos/O2_07_3.mp4,36,pos_3,1,2,O2,07,3,static/occluded,gap_contains_d,O2,79,0,,
+O2_07_4,videos/O2_07_4.mp4,36,imp_4,0,2,O2,07,4,static/occluded,gap_contains_d,O2,79,1,80,object_3
+O2_10_1,videos/O2_10_1.mp4,39,pos_1,1,1,O2,10,1,moving/occluded,gap_contains_d,O2,52,0,,
+O2_10_3,videos/O2_10_3.mp4,39,imp_3,0,1,O2,10,3,moving/occluded,gap_contains_d,O2,52,2,53 61,object_3
+O2_10_2,videos/O2_10_2.mp4,39,pos_2,1,2,O2,10,2,moving/occluded,gap_contains_d,O2,52,0,,
+O2_10_4,videos/O2_10_4.mp4,39,imp_4,0,2,O2,10,4,moving/occluded,gap_contains_d,O2,52,2,53 61,object_3
+O2_11_1,videos/O2_11_1.mp4,40,pos_1,1,1,O2,11,1,moving/occluded,gap_contains_d,O2,51,0,,
+O2_11_3,videos/O2_11_3.mp4,40,imp_3,0,1,O2,11,3,moving/occluded,gap_contains_d,O2,51,2,52 60,object_1
+O2_11_2,videos/O2_11_2.mp4,40,pos_2,1,2,O2,11,2,moving/occluded,gap_contains_d,O2,51,0,,
+O2_11_4,videos/O2_11_4.mp4,40,imp_4,0,2,O2,11,4,moving/occluded,gap_contains_d,O2,51,2,52 60,object_1
+O2_13_3,videos/O2_13_3.mp4,42,pos_3,1,1,O2,13,3,static/occluded,gap_contains_d,O2,57,0,,
+O2_13_1,videos/O2_13_1.mp4,42,imp_1,0,1,O2,13,1,static/occluded,gap_contains_d,O2,57,1,58,object_1
+O2_13_4,videos/O2_13_4.mp4,42,pos_4,1,2,O2,13,4,static/occluded,gap_contains_d,O2,57,0,,
+O2_13_2,videos/O2_13_2.mp4,42,imp_2,0,2,O2,13,2,static/occluded,gap_contains_d,O2,57,1,58,object_1
+O2_14_1,videos/O2_14_1.mp4,43,pos_1,1,1,O2,14,1,static/occluded,gap_contains_d,O2,27,0,,
+O2_14_2,videos/O2_14_2.mp4,43,imp_2,0,1,O2,14,2,static/occluded,gap_contains_d,O2,27,1,28,object_1
+O2_14_4,videos/O2_14_4.mp4,43,pos_4,1,2,O2,14,4,static/occluded,gap_contains_d,O2,27,0,,
+O2_14_3,videos/O2_14_3.mp4,43,imp_3,0,2,O2,14,3,static/occluded,gap_contains_d,O2,27,1,28,object_1
+O2_17_1,videos/O2_17_1.mp4,46,pos_1,1,1,O2,17,1,moving/occluded,gap_ends_just_before_d,O2,45,0,,
+O2_17_2,videos/O2_17_2.mp4,46,imp_2,0,1,O2,17,2,moving/occluded,gap_ends_just_before_d,O2,45,2,46 52,object_2
+O2_17_4,videos/O2_17_4.mp4,46,pos_4,1,2,O2,17,4,moving/occluded,gap_ends_just_before_d,O2,45,0,,
+O2_17_3,videos/O2_17_3.mp4,46,imp_3,0,2,O2,17,3,moving/occluded,gap_ends_just_before_d,O2,45,2,46 52,object_2
+O2_19_1,videos/O2_19_1.mp4,48,pos_1,1,1,O2,19,1,moving/occluded,gap_contains_d,O2,51,0,,
+O2_19_2,videos/O2_19_2.mp4,48,imp_2,0,1,O2,19,2,moving/occluded,gap_contains_d,O2,51,1,52,object_1
+O2_19_3,videos/O2_19_3.mp4,48,pos_3,1,2,O2,19,3,moving/occluded,gap_contains_d,O2,51,0,,
+O2_19_4,videos/O2_19_4.mp4,48,imp_4,0,2,O2,19,4,moving/occluded,gap_contains_d,O2,51,1,52,object_1
+O2_21_4,videos/O2_21_4.mp4,50,pos_4,1,1,O2,21,4,moving/occluded,gap_contains_d,O2,47,0,,
+O2_21_1,videos/O2_21_1.mp4,50,imp_1,0,1,O2,21,1,moving/occluded,gap_contains_d,O2,47,1,48,object_3
+O2_21_3,videos/O2_21_3.mp4,50,pos_3,1,2,O2,21,3,moving/occluded,gap_contains_d,O2,47,0,,
+O2_21_2,videos/O2_21_2.mp4,50,imp_2,0,2,O2,21,2,moving/occluded,gap_contains_d,O2,47,1,48,object_3
+O2_27_3,videos/O2_27_3.mp4,56,pos_3,1,2,O2,27,3,static/occluded,gap_contains_d,O2,55,0,,
+O2_27_2,videos/O2_27_2.mp4,56,imp_2,0,2,O2,27,2,static/occluded,gap_contains_d,O2,55,1,56,object_1
+O2_27_1,videos/O2_27_1.mp4,56,pos_1,1,1,O2,27,1,static/occluded,gap_contains_d,O2,55,0,,
+O2_27_4,videos/O2_27_4.mp4,56,imp_4,0,1,O2,27,4,static/occluded,gap_contains_d,O2,55,1,56,object_1
+O2_28_1,videos/O2_28_1.mp4,57,pos_1,1,1,O2,28,1,moving/occluded,gap_ends_just_before_d,O2,53,0,,
+O2_28_2,videos/O2_28_2.mp4,57,imp_2,0,1,O2,28,2,moving/occluded,gap_ends_just_before_d,O2,53,1,54,object_2
+O2_28_3,videos/O2_28_3.mp4,57,pos_3,1,2,O2,28,3,moving/occluded,gap_ends_just_before_d,O2,53,0,,
+O2_28_4,videos/O2_28_4.mp4,57,imp_4,0,2,O2,28,4,moving/occluded,gap_ends_just_before_d,O2,53,1,54,object_2
+O2_30_4,videos/O2_30_4.mp4,59,pos_4,1,1,O2,30,4,moving/occluded,gap_contains_d,O2,51,0,,
+O2_30_1,videos/O2_30_1.mp4,59,imp_1,0,1,O2,30,1,moving/occluded,gap_contains_d,O2,51,1,52,object_1
+O2_30_3,videos/O2_30_3.mp4,59,pos_3,1,2,O2,30,3,moving/occluded,gap_contains_d,O2,51,0,,
+O2_30_2,videos/O2_30_2.mp4,59,imp_2,0,2,O2,30,2,moving/occluded,gap_contains_d,O2,51,1,52,object_1
+O3_01_4,videos/O3_01_4.mp4,60,pos_4,1,1,O3,01,4,static/occluded,gap_contains_d,O3,29,0,,
+O3_01_1,videos/O3_01_1.mp4,60,imp_1,0,1,O3,01,1,static/occluded,gap_contains_d,O3,29,1,30,object_2
+O3_01_3,videos/O3_01_3.mp4,60,pos_3,1,2,O3,01,3,static/occluded,gap_contains_d,O3,29,0,,
+O3_01_2,videos/O3_01_2.mp4,60,imp_2,0,2,O3,01,2,static/occluded,gap_contains_d,O3,29,1,30,object_2
+O3_02_2,videos/O3_02_2.mp4,61,pos_2,1,1,O3,02,2,static/occluded,gap_contains_d,O3,57,0,,
+O3_02_1,videos/O3_02_1.mp4,61,imp_1,0,1,O3,02,1,static/occluded,gap_contains_d,O3,57,1,58,object_2
+O3_02_4,videos/O3_02_4.mp4,61,pos_4,1,2,O3,02,4,static/occluded,gap_contains_d,O3,57,0,,
+O3_02_3,videos/O3_02_3.mp4,61,imp_3,0,2,O3,02,3,static/occluded,gap_contains_d,O3,57,1,58,object_2
+O3_04_1,videos/O3_04_1.mp4,63,pos_1,1,1,O3,04,1,moving/occluded,gap_ends_just_before_d,O3,37,0,,
+O3_04_3,videos/O3_04_3.mp4,63,imp_3,0,1,O3,04,3,moving/occluded,gap_ends_just_before_d,O3,37,2,38 54,object_1
+O3_04_2,videos/O3_04_2.mp4,63,pos_2,1,2,O3,04,2,moving/occluded,gap_contains_d,O3,37,0,,
+O3_04_4,videos/O3_04_4.mp4,63,imp_4,0,2,O3,04,4,moving/occluded,gap_contains_d,O3,37,2,38 54,object_1
+O3_08_4,videos/O3_08_4.mp4,67,pos_4,1,1,O3,08,4,static/occluded,gap_contains_d,O3,77,0,,
+O3_08_1,videos/O3_08_1.mp4,67,imp_1,0,1,O3,08,1,static/occluded,gap_contains_d,O3,77,1,78,object_1
+O3_08_3,videos/O3_08_3.mp4,67,pos_3,1,2,O3,08,3,static/occluded,gap_contains_d,O3,77,0,,
+O3_08_2,videos/O3_08_2.mp4,67,imp_2,0,2,O3,08,2,static/occluded,gap_contains_d,O3,77,1,78,object_1
+O3_09_3,videos/O3_09_3.mp4,68,pos_3,1,1,O3,09,3,moving/occluded,gap_ends_just_before_d,O3,38,0,,
+O3_09_1,videos/O3_09_1.mp4,68,imp_1,0,1,O3,09,1,moving/occluded,gap_ends_just_before_d,O3,38,2,39 52,object_1
+O3_09_2,videos/O3_09_2.mp4,68,pos_2,1,2,O3,09,2,moving/occluded,gap_contains_d,O3,38,0,,
+O3_09_4,videos/O3_09_4.mp4,68,imp_4,0,2,O3,09,4,moving/occluded,gap_contains_d,O3,38,2,39 52,object_1
+O3_10_1,videos/O3_10_1.mp4,69,pos_1,1,1,O3,10,1,static/occluded,gap_contains_d,O3,65,0,,
+O3_10_2,videos/O3_10_2.mp4,69,imp_2,0,1,O3,10,2,static/occluded,gap_contains_d,O3,65,1,66,object_2
+O3_10_4,videos/O3_10_4.mp4,69,pos_4,1,2,O3,10,4,static/occluded,gap_contains_d,O3,65,0,,
+O3_10_3,videos/O3_10_3.mp4,69,imp_3,0,2,O3,10,3,static/occluded,gap_contains_d,O3,65,1,66,object_2
+O3_14_3,videos/O3_14_3.mp4,73,pos_3,1,1,O3,14,3,moving/occluded,gap_contains_d,O3,41,0,,
+O3_14_1,videos/O3_14_1.mp4,73,imp_1,0,1,O3,14,1,moving/occluded,gap_contains_d,O3,41,2,42 48,object_1
+O3_14_4,videos/O3_14_4.mp4,73,pos_4,1,2,O3,14,4,moving/occluded,gap_ends_just_before_d,O3,41,0,,
+O3_14_2,videos/O3_14_2.mp4,73,imp_2,0,2,O3,14,2,moving/occluded,gap_ends_just_before_d,O3,41,2,42 48,object_1
+O3_18_3,videos/O3_18_3.mp4,77,pos_3,1,1,O3,18,3,moving/occluded,not_seen_before_d,O3,36,0,,
+O3_18_1,videos/O3_18_1.mp4,77,imp_1,0,1,O3,18,1,moving/occluded,not_seen_before_d,O3,36,1,37,object_1
+O3_18_4,videos/O3_18_4.mp4,77,pos_4,1,2,O3,18,4,moving/occluded,gap_contains_d,O3,36,0,,
+O3_18_2,videos/O3_18_2.mp4,77,imp_2,0,2,O3,18,2,moving/occluded,gap_contains_d,O3,36,1,37,object_1
+O3_19_2,videos/O3_19_2.mp4,78,pos_2,1,1,O3,19,2,static/occluded,gap_contains_d,O3,77,0,,
+O3_19_1,videos/O3_19_1.mp4,78,imp_1,0,1,O3,19,1,static/occluded,gap_contains_d,O3,77,1,78,object_1
+O3_19_3,videos/O3_19_3.mp4,78,pos_3,1,2,O3,19,3,static/occluded,gap_contains_d,O3,77,0,,
+O3_19_4,videos/O3_19_4.mp4,78,imp_4,0,2,O3,19,4,static/occluded,gap_contains_d,O3,77,1,78,object_1
+O3_20_2,videos/O3_20_2.mp4,79,pos_2,1,1,O3,20,2,moving/occluded,gap_contains_d,O3,50,0,,
+O3_20_1,videos/O3_20_1.mp4,79,imp_1,0,1,O3,20,1,moving/occluded,gap_contains_d,O3,50,2,51 59,object_3
+O3_20_3,videos/O3_20_3.mp4,79,pos_3,1,2,O3,20,3,moving/occluded,gap_ends_just_before_d,O3,50,0,,
+O3_20_4,videos/O3_20_4.mp4,79,imp_4,0,2,O3,20,4,moving/occluded,gap_ends_just_before_d,O3,50,2,51 59,object_3
+O3_22_2,videos/O3_22_2.mp4,81,pos_2,1,1,O3,22,2,moving/occluded,gap_contains_d,O3,38,0,,
+O3_22_1,videos/O3_22_1.mp4,81,imp_1,0,1,O3,22,1,moving/occluded,gap_contains_d,O3,38,1,39,object_1
+O3_22_3,videos/O3_22_3.mp4,81,pos_3,1,2,O3,22,3,moving/occluded,not_seen_before_d,O3,38,0,,
+O3_22_4,videos/O3_22_4.mp4,81,imp_4,0,2,O3,22,4,moving/occluded,not_seen_before_d,O3,38,1,39,object_1
+O3_23_1,videos/O3_23_1.mp4,82,pos_1,1,1,O3,23,1,moving/occluded,gap_contains_d,O3,41,0,,
+O3_23_2,videos/O3_23_2.mp4,82,imp_2,0,1,O3,23,2,moving/occluded,gap_contains_d,O3,41,1,42,object_1
+O3_23_3,videos/O3_23_3.mp4,82,pos_3,1,2,O3,23,3,moving/occluded,not_seen_before_d,O3,41,0,,
+O3_23_4,videos/O3_23_4.mp4,82,imp_4,0,2,O3,23,4,moving/occluded,not_seen_before_d,O3,41,1,42,object_1
+O3_24_2,videos/O3_24_2.mp4,83,pos_2,1,2,O3,24,2,moving/occluded,not_seen_before_d,O3,41,0,,
+O3_24_3,videos/O3_24_3.mp4,83,imp_3,0,2,O3,24,3,moving/occluded,not_seen_before_d,O3,41,1,42,object_1
+O3_24_1,videos/O3_24_1.mp4,83,pos_1,1,1,O3,24,1,moving/occluded,gap_contains_d,O3,41,0,,
+O3_24_4,videos/O3_24_4.mp4,83,imp_4,0,1,O3,24,4,moving/occluded,gap_contains_d,O3,41,1,42,object_1
+O3_29_2,videos/O3_29_2.mp4,88,pos_2,1,1,O3,29,2,moving/occluded,gap_ends_just_before_d,O3,43,0,,
+O3_29_1,videos/O3_29_1.mp4,88,imp_1,0,1,O3,29,1,moving/occluded,gap_ends_just_before_d,O3,43,2,44 59,object_2
+O3_29_4,videos/O3_29_4.mp4,88,pos_4,1,2,O3,29,4,moving/occluded,gap_contains_d,O3,43,0,,
+O3_29_3,videos/O3_29_3.mp4,88,imp_3,0,2,O3,29,3,moving/occluded,gap_contains_d,O3,43,2,44 59,object_2
+O3_30_3,videos/O3_30_3.mp4,89,pos_3,1,2,O3,30,3,moving/occluded,not_seen_before_d,O3,32,0,,
+O3_30_2,videos/O3_30_2.mp4,89,imp_2,0,2,O3,30,2,moving/occluded,not_seen_before_d,O3,32,1,33,object_1
+O3_30_1,videos/O3_30_1.mp4,89,pos_1,1,1,O3,30,1,moving/occluded,gap_contains_d,O3,32,0,,
+O3_30_4,videos/O3_30_4.mp4,89,imp_4,0,1,O3,30,4,moving/occluded,gap_contains_d,O3,32,1,33,object_1
