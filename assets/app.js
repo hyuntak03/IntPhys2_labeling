@@ -250,7 +250,7 @@
   // 브라우저 저장이 먼저고, 바뀐 영상은 outbox 에 쌓았다가 시트로 보낸다. 같은 영상은 t (저장 시각) 가 늦은 쪽이 이긴다.
   // 응답의 set 이 이 데이터셋이 아니면 (예전 스크립트) 보내지 않고 기다린다. 예전 스크립트는 set 없이 ip2 만 안다.
 
-  const sync = { outbox: new Set(), inflight: false, ok: null, outdated: false, timer: 0, delay: 0, pullTimer: 0, pulledAt: 0 };
+  const sync = { outbox: new Set(), inflight: false, ok: null, outdated: false, timer: 0, delay: 0, pullTimer: 0, pulledAt: 0, beaconAt: 0 };
   const knows = (r) => (r.set || 'ip2') === SET;
 
   const wire = (id) => {
@@ -267,6 +267,7 @@
     if (!SYNC_URL) return;
     sync.outbox.add(id);
     saveOutbox();
+    renderSaveState();
     scheduleFlush(1200);
   }
 
@@ -356,6 +357,9 @@
   // 탭을 닫거나 숨기거나 데이터셋을 바꿀 때 남은 것을 보낸다. 응답은 못 받으니 outbox 는 그대로 두고, 다음에 열 때 다시 맞춘다.
   function beacon() {
     if (!SYNC_URL || sync.outdated || !sync.outbox.size || !navigator.sendBeacon) return;
+    // 페이지를 떠날 때 visibilitychange · pagehide 가 같이 오므로 한 번만
+    if (Date.now() - sync.beaconAt < 1000) return;
+    sync.beaconAt = Date.now();
     const labels = [...sync.outbox].filter((id) => S.labels[id]?.t).map(wire);
     navigator.sendBeacon(SYNC_URL, new Blob([JSON.stringify({ set: SET, labels })], { type: 'text/plain;charset=utf-8' }));
   }
@@ -421,7 +425,9 @@
         const first = v.pair !== lastPair;
         lastPair = v.pair;
         li.className = `item ip1 p${v.pair}${first ? ' pair-first' : ''} ${st}${i === S.idx ? ' active' : ''}`;
-        li.innerHTML = `<span class="pairtag">${first ? `쌍 ${v.pair}` : ''}</span><span class="dot"></span><span class="name">${plTag(v)}<small>${v.id}</small></span><span class="rng">${rangeText(l)}</span>`;
+        const rng = st === 'nf' ? '못 찾음' : l && (l.s != null || l.e != null) ? `${l.s ?? '?'}–${l.e ?? '?'}` : '';
+        const mo = l?.mo && st !== 'nf' ? `<i class="mo">${MO_KO[l.mo]}</i>` : '';
+        li.innerHTML = `<span class="pairtag">${first ? `쌍 ${v.pair}` : ''}</span><span class="dot"></span><span class="name">${plTag(v)}<small>${v.id}</small></span><span class="rng">${rng}${mo}</span>`;
       } else {
         li.className = `item ${st}${i === S.idx ? ' active' : ''}`;
         li.innerHTML = `<span class="dot"></span><span class="name"><b>s${v.scene} · p${v.pair}</b><small>${v.game}</small></span><span class="rng">${rangeText(l)}</span>`;
